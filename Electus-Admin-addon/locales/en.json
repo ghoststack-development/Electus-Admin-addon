@@ -1,0 +1,213 @@
+{
+  "command": {
+    "setmoney": {
+      "help": "Set a player's money balance.",
+      "params": {
+        "id": {
+          "name": "id",
+          "help": "Target player server ID."
+        },
+        "moneytype": {
+          "name": "moneytype",
+          "help": "Type of money (cash, bank, crypto, etc)."
+        },
+        "amount": {
+          "name": "amount",
+          "help": "Amount of money to set."
+        }
+      }
+    },
+
+    "setjob": {
+      "help": "Set a player's job and grade.",
+      "params": {
+        "id": {
+          "name": "id",
+          "help": "Target player server ID."
+        },
+        "job": {
+          "name": "job",
+          "help": "Job name to assign."
+        },
+        "grade": {
+          "name": "grade",
+          "help": "Optional job grade (defaults to 0)."
+        }
+      }
+    },
+
+    "setgang": {
+      "help": "Set a player's gang and grade.",
+      "params": {
+        "id": {
+          "name": "id",
+          "help": "Target player server ID."
+        },
+        "gang": {
+          "name": "gang",
+          "help": "Gang name to assign."
+        },
+        "grade": {
+          "name": "grade",
+          "help": "Optional gang grade (defaults to 0)."
+        }
+      }
+    },
+
+    "deletechar": {
+      "help": "Permanently delete a player's character.",
+      "params": {
+        "id": {
+          "name": "id",
+          "help": "Target player server ID."
+        }
+      }
+    },
+
+    "dv": {
+      "help": "Delete a vehicle or vehicles within a radius.",
+      "params": {
+        "radius": {
+          "name": "radius",
+          "help": "Optional radius to delete nearby vehicles."
+        }
+      }
+    },
+
+    "tp": {
+      "help": "Teleport to a player or to coordinates.",
+      "params": {
+        "x": {
+          "name": "x",
+          "help": "Target player ID OR X coordinate."
+        },
+        "y": {
+          "name": "y",
+          "help": "Y coordinate (required if using coordinates)."
+        },
+        "z": {
+          "name": "z",
+          "help": "Z coordinate (required if using coordinates)."
+        }
+      }
+    },
+
+    "tpm": {
+      "help": "Teleport to your waypoint marker."
+    },
+
+    "setbucket": {
+      "help": "Set a player's routing bucket.",
+      "params": {
+        "id": {
+          "name": "id",
+          "help": "Target player server ID."
+        },
+        "bucket": {
+          "name": "bucket",
+          "help": "Bucket ID to assign."
+        }
+      }
+    },
+
+    "addjob": {
+      "help": "Add a job to a player.",
+      "params": {
+        "id": {
+          "name": "id",
+          "help": "Target player server ID."
+        },
+        "job": {
+          "name": "job",
+          "help": "Job name to assign."
+        },
+        "grade": {
+          "name": "grade",
+          "help": "Optional job grade (defaults to 0)."
+        }
+      }
+    },
+
+    "changejob": {
+      "help": "Change a player's job.",
+      "params": {
+        "id": {
+          "name": "id",
+          "help": "Target player server ID."
+        },
+        "job": {
+          "name": "job",
+          "help": "New job name to assign."
+        }
+      }
+    },
+
+    "givemoney": {
+      "help": "Give money to a player.",
+      "params": {
+        "id": {
+          "name": "id",
+          "help": "Target player server ID."
+        },
+        "moneytype": {
+          "name": "moneytype",
+          "help": "Type of money (cash, bank, crypto, etc)."
+        },
+        "amount": {
+          "name": "amount",
+          "help": "Amount of money to give."
+        }
+      }
+    }
+  },
+
+  "success": {
+    "money_set": "Set $%s %s for %s.",
+    "job_set": "Set %s's job to %s (Grade %s).",
+    "gang_set": "Set %s's gang to %s (Grade %s).",
+    "vehicles_deleted": "Vehicle(s) successfully deleted.",
+    "bucket_set": "Set %s's bucket to %s.",
+    "tp_success_player": "Teleported to player successfully.",
+    "tp_success_coords": "Teleported to coordinates successfully.",
+    "tpm_success": "Teleported to waypoint successfully.",
+    "character_deleted": "Character successfully deleted.",
+    "job_added": "Successfully added job %s (Grade %s) to %s.",
+    "job_changed": "Changed %s's job to %s.",
+    "money_given": "Gave $%s %s to %s."
+  },
+
+  "error": {
+    "not_online": "Player is not online.",
+    "invalid_moneytype": "Invalid money type.",
+    "invalid_job": "Invalid job name.",
+    "invalid_grade": "Invalid job grade.",
+    "invalid_gang": "Invalid gang name.",
+    "invalid_gang_grade": "Invalid gang grade.",
+    "no_vehicles_found": "No vehicles found to delete.",
+    "player_not_found": "Player not found.",
+    "no_permission": "You do not have permission to use this command.",
+    "invalid_coords": "Invalid coordinates provided.",
+    "missing_tp_args": "Missing teleport arguments.",
+    "character_not_deleted": "Character NOT deleted. No matching record found.",
+    "invalid_player_id": "Invalid player ID."
+  },
+
+  "kick": {
+    "default_reason": "Your character has been permanently deleted by staff.",
+    "console_reason": "Your character has been permanently deleted by console."
+  },
+
+  "log": {
+    "setgang_title": "🔫 Gang Set",
+    "setmoney_title": "💰 Set Money Log",
+    "founder_info": "Founder Information",
+    "deleted_character": "Deleted Character Information",
+    "job_added_title": "🔧 Job Added",
+    "job_added_description": "Job %s (Grade %s) has been added to %s by %s.",
+    "job_changed_title": "💼 Job Changed",
+    "job_changed_description": "Job %s (Grade %s) has been changed for %s by %s.",
+    "money_given_title": "💰 Money Given",
+    "money_given_description": "$%s %s has been given to %s by %s.",
+    "footer": "Electus Admin System"
+  }
+}

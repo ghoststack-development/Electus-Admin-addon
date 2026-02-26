@@ -1,14 +1,14 @@
 # GhostStack Admin Webhook Addon
 
-![GitHub last commit](https://img.shields.io/github/last-commit/ghoststack-dev/fivem-admin-webhooks?style=flat-square)
-![Discord](https://img.shields.io/discord/000000000000000000?label=Support&style=flat-square)
-![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/ghoststack-dev/fivem-admin-webhooksstyle=flat-square)
+![Discord](https://img.shields.io/discord/000000000000000000label=Support&style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-greenstyle=flat-square)
 
 > Advanced **Discord webhook logging addon** for the Electus Admin Script ([Electus Admin](https://store.electus-scripts.com/packages/admin)), developed by **GhostStack Development**.
 
 ---
 
-## ?? Table of Contents
+##  Table of Contents
 
 - [File Overview](#file-overview)  
 - [Config Setup](#config-setup)  
@@ -19,7 +19,7 @@
 
 ---
 
-## ?? File Overview
+##  File Overview
 
 | File | Description |
 |------|-------------|
@@ -29,7 +29,7 @@
 
 ---
 
-## ?? Config Setup
+##  Config Setup
 
 Configure which roles can execute each admin command by editing `config.lua`:
 
@@ -128,9 +128,9 @@ Config.CommandPermissions = {
     },
 }
 
-? Role names must exactly match your server groups.
+ Role names must exactly match your server groups.
 
-?? Webhook Setup (apikeys.lua)
+ Webhook Setup (apikeys.lua)
 
 Update with your Discord webhook URLs to enable logging of all events.
 
@@ -154,11 +154,11 @@ ApiKeys.Webhooks = {
     god        = "change to your webhook",
 }
 
-?? Ensure all webhooks are active and correspond to the correct actions.
+Ensure all webhooks are active and correspond to the correct actions.
 
 
-?? Commands & Permissions
-<details> <summary><strong>Admin Commands</strong></summary>
+Commands & Permissions
+Admin Commands
 Command	Allowed Roles
 setjob	founder, admin, management
 deletechar	founder
@@ -174,25 +174,26 @@ addjob	founder, admin, management
 changejob	founder, admin, management, Legal Team
 givemoney	founder, admin, management
 god	founder, admin, management, moderator, supporter
-</details> <details> <summary><strong>Role Groups Explanation</strong></summary>
-
-Founder – Full control of all admin commands.
-
-Admin – High-level server control and job management.
-
-Management – Can handle jobs, gangs, and money management.
-
-Moderator – Limited admin powers like teleporting, deleting chars.
-
-Supporter – Viewer-level commands, teleport, and minor admin actions.
-
-Legal Team – Special access for changejob command.
-
-</details>
 
 
-?? Developed By
+Role Groups Explanation
 
-GhostStack Development – enhancing FiveM server admin control with clean, reliable webhook logging.
+Founder â€“ Full control of all admin commands.
 
-?? Ready to drop into your server and extend Electus Admin with professional logging!
+Admin â€“ High-level server control and job management.
+
+Management â€“ Can handle jobs, gangs, and money management.
+
+Moderator â€“ Limited admin powers like teleporting, deleting chars.
+
+Supporter â€“ Viewer-level commands, teleport, and minor admin actions.
+
+Legal Team â€“ Special access for changejob command.
+
+
+
+Developed By
+
+GhostStack Development â€“ enhancing FiveM server admin control with clean, reliable webhook logging.
+
+Ready to drop into your server and extend Electus Admin with professional logging!
